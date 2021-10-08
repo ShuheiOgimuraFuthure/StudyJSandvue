@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>勉強用</title>
+    <link rel="stylesheet" href="SutudySuport.css">
+    </head>
+<body>
+    <div class="frame">
+        
+        <h1 class="frame_title">JavaScripts</h1>
+ 
+        <div class="frame_innner">
+        
+        <div id="returnval"></div>
+
+        
+        <!--これからJavaScriptsを記載する-->
+        <!--JavaScriptsを記載する際には<scripts></scripts>を記載し、その中に書く-->
+        <script>
+            document.writeln("いままでの課題ではDocument.writeを使用していた");
+            document.writeln("しかし、CSSなどで装飾してい着たい場合は上記だと不都合");
+
+            document.writeln("その際はdocument.getElementById(id名)でid名を取得し、InnerHTMLなどを使用して書き込む方がいい");
+    
+            //他メリットとして、innnerHTMLで記載すれば可変式の表示が可能になる日付のタグだったりを変数でいれておけば逐一変わるし便利
+            //例 変数yesrを作成
+            const year = new Date();
+            
+            //document.getElementByIdで上のreturnvalを取得し、InnerHTMLで中に定数constを入れる ※一回変数に入れてもよい
+            let returnvala = document.getElementById("returnval");
+            returnvala.innerHTML = "年数を表示" + year.getFullYear(); ;
+
+
+
+
+
+
+            </script>
+        </div> 
+
+    </div>
+
+
+
+</body>
+</html>

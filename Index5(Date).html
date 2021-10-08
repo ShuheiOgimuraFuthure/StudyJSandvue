@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>勉強用</title>
+    <link rel="stylesheet" href="SutudySuport.css">
+    </head>
+<body>
+    <div class="frame">
+        
+        <h1 class="frame_title">JavaScripts</h1>
+        <!--これからJavaScriptsを記載する-->
+        <!--JavaScriptsを記載する際には<scripts></scripts>を記載し、その中に書く-->
+        <div class="frame_innner">
+        <h1 id="returnval">今回は日時の表示をします</h1>
+            <script>
+            //下記は1Consoleに表示するだけ
+
+            //Javascripts内のコメントアウトは→//
+            //画面に文字を出力する　documents.write(); 正式にはwindow.documents.write write はメソッド
+            //document.write("JavaScriptsを勉強中です");
+            //最近は下記,上記でh1　id で内容を記載しているが、優先されるのはid下記
+            document.getElementById("returnval").innerHTML = "入力結果";
+            
+            //Dateインスタンスの生成 new Date();
+            //constは定数　変更不可の値
+            //またjsのDateには自前で成形するメソッドが存在しない、下記だと　Thu Oct 07 2021 00:30:02 GMT+0900 (GMT+09:00)　で出力される
+            //Javaで取得して持ってきた方がいい
+            const today= new Date();
+
+            //時間を取得するメソッド
+            const hour = today.getHours;
+            //年数を取得するメソッド
+            let year = today.getFullYear;
+
+            //JSでは+で文字列をつなぐ文字列連結とShellに似ているテンプレート文字列の表示方法がある
+            //下記のは一般的な文字列連結
+            document.getElementById("returnval").innerHTML = "入力結果" + today + "hour" + hour;
+            //テンプレート文字列は　``で囲み　計算式やメソッドを${}で囲んで表示するがinnnerHTMLだと上手くいかない
+            //document.getElementById("returnval").innerHTML = `入力結果${today}hour${hour}`;
+            //なんかうまくいかない
+            document.write(`${hour}`);
+
+            </script>
+        </div> 
+
+    </div>
+
+
+
+</body>
+</html>

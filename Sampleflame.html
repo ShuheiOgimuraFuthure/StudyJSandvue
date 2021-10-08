@@ -12,21 +12,17 @@
         <!--これからJavaScriptsを記載する-->
         <!--JavaScriptsを記載する際には<scripts></scripts>を記載し、その中に書く-->
         <div class="frame_innner">
-        <h1 id="returnval"></h1> 
+        <div id="returnval"></div>
             <script>
             //下記は1Consoleに表示するだけ
-            console.log("hellow");
+
             //Javascripts内のコメントアウトは→//
             //画面に文字を出力する　documents.write(); 正式にはwindow.documents.write write はメソッド
-           
-            //ユーザが入力できるようにする（変数設定）
-            //JSのプログラムにはpormptとよばれる入力欄を表示する変数があるprompt(この中にはメッセーじが表示される)
-            //下記のプログラムではprompt()で入力されたものを戻り値として変数dayにいれている。
-            let day =　parseInt(prompt("なにか入れてください"));
+            //document.write("JavaScriptsを勉強中です");
+            //最近は下記
+            document.getElementById("returnval").innerHTML = "入力結果";
 
-            //うけ取った変数を使用してブラウザに表示する
-            document.writeln("足し算です"+(10+10) + day);
-            document.getElementById("returnval").innerHTML = "入力結果" + (day + 101);
+
 
             </script>
         </div> 
