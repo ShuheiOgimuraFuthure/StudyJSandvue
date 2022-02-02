@@ -1,3 +1,20 @@
 a[href *= "flm"]{
-    background-color: lightbule;
+    background-color: lightblue;
 }
+
+/*フォントプロパティはまとめて下記のように指定できる*/
+h1{
+    font: italic normal bold 12px/150% "メイリオ";
+    float: left;
+    color: lightcoral !important;
+    color: green;
+}
+
+/*下記と一緒
+ font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  font-family: "メイリオ",sans-serif;
+  */
